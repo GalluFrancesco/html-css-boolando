@@ -5,15 +5,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card{
-    width: 200px;   
-    background-color: red;
-    display: inline-block;
-    }
+main{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
 
-.img{
+.card{
+    width: 32%; 
+    height: 450px;  
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.immagini{
     width: 100%;
-    margin-top: 0;
+    position: relative;
 }
 
 span .testo:first-of-type{
@@ -25,6 +34,10 @@ span .testo:nth-last-of-type(2){
     font-weight: bold;
 }
 
+span .testo:last-of-type{
+    color: red;
+}
+
 .show,.hide{
     width: 100%;
 }
@@ -33,10 +46,41 @@ span .testo:nth-last-of-type(2){
     display: none;
 }
 
-.show:hover{
+.immagini:hover .show{
     display: none;
 }
 
-.show:hover + .hide{
-    display: block;
+.immagini:hover  .hide{
+    display: inline;
+}
+
+.heart{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.riga{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+span .box:first-child{
+    color: white;
+    background-color: #EB0037;
+    padding: 3px;
+    font-size: 60%;
+}
+
+span .box:nth-child(2){
+    color: white;
+    background-color:#23875A;
+    padding: 3px;
+    font-size: 60%;
 }
