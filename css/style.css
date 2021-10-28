@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    width: 200px;   
+    background-color: red;
+    display: inline-block;
+    }
+
+.img{
+    width: 100%;
+    margin-top: 0;
+}
+
+span .testo:first-of-type{
+    font-size: 0.8;
+}
+
+span .testo:nth-last-of-type(2){
+    font-size: 1.5;
+    font-weight: bold;
+}
+
+.show,.hide{
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+.show:hover{
+    display: none;
+}
+
+.show:hover + .hide{
+    display: block;
+}
