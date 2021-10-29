@@ -42,6 +42,10 @@ span .testo:last-of-type{
     width: 100%;
 }
 
+.show{
+    display: block;
+}
+
 .hide{
     display: none;
 }
@@ -51,7 +55,7 @@ span .testo:last-of-type{
 }
 
 .immagini:hover  .hide{
-    display: inline;
+    display: block;
 }
 
 .heart{
